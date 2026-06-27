@@ -1,3 +1,4 @@
+import oscarPhoto from "./assests/oscar.jpeg";
 import { useState, useEffect } from "react";
 
 const ROLES = ["AI Automation Builder","n8n Workflow Engineer","LLM Integration Specialist","Frontend Developer"];
@@ -175,8 +176,7 @@ export default function Portfolio() {
         <div className="about-grid">
           <div>
             <div className="photo-box">
-              <div className="photo-inner">OI</div>
-              <div className="photo-note">Add photo: src/assets/oscar.jpg</div>
+              <img src={oscarPhoto} style={{width:"100%",aspectRatio:"3/4",objectFit:"cover",objectPosition:"top",borderRadius:"14px"}} alt="Osarodion Igbinigie" />
             </div>
             <div className="loc-badge">📍 Abuja, Nigeria</div>
           </div>
